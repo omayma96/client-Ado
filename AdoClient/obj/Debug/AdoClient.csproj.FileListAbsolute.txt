@@ -1,0 +1,10 @@
+C:\Users\Youcode\Documents\GitHub\client-Ado\AdoClient\obj\Debug\AdoClient.csprojAssemblyReference.cache
+C:\Users\Youcode\Documents\GitHub\client-Ado\AdoClient\obj\Debug\AdoClient.Form1.resources
+C:\Users\Youcode\Documents\GitHub\client-Ado\AdoClient\obj\Debug\AdoClient.Properties.Resources.resources
+C:\Users\Youcode\Documents\GitHub\client-Ado\AdoClient\obj\Debug\AdoClient.csproj.GenerateResource.cache
+C:\Users\Youcode\Documents\GitHub\client-Ado\AdoClient\obj\Debug\AdoClient.csproj.CoreCompileInputs.cache
+C:\Users\Youcode\Documents\GitHub\client-Ado\AdoClient\bin\Debug\AdoClient.exe.config
+C:\Users\Youcode\Documents\GitHub\client-Ado\AdoClient\bin\Debug\AdoClient.exe
+C:\Users\Youcode\Documents\GitHub\client-Ado\AdoClient\bin\Debug\AdoClient.pdb
+C:\Users\Youcode\Documents\GitHub\client-Ado\AdoClient\obj\Debug\AdoClient.exe
+C:\Users\Youcode\Documents\GitHub\client-Ado\AdoClient\obj\Debug\AdoClient.pdb

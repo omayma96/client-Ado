@@ -1,0 +1,16 @@
+C:\Users\Youcode\Documents\GitHub\client-Ado\projet\bin\Debug\projet.exe.config
+C:\Users\Youcode\Documents\GitHub\client-Ado\projet\bin\Debug\projet.exe
+C:\Users\Youcode\Documents\GitHub\client-Ado\projet\bin\Debug\projet.pdb
+C:\Users\Youcode\Documents\GitHub\client-Ado\projet\obj\Debug\projet.csprojAssemblyReference.cache
+C:\Users\Youcode\Documents\GitHub\client-Ado\projet\obj\Debug\MainWindow.g.cs
+C:\Users\Youcode\Documents\GitHub\client-Ado\projet\obj\Debug\App.g.cs
+C:\Users\Youcode\Documents\GitHub\client-Ado\projet\obj\Debug\projet_MarkupCompile.cache
+C:\Users\Youcode\Documents\GitHub\client-Ado\projet\obj\Debug\projet_MarkupCompile.lref
+C:\Users\Youcode\Documents\GitHub\client-Ado\projet\obj\Debug\MainWindow.baml
+C:\Users\Youcode\Documents\GitHub\client-Ado\projet\obj\Debug\projet.g.resources
+C:\Users\Youcode\Documents\GitHub\client-Ado\projet\obj\Debug\projet.Properties.Resources.resources
+C:\Users\Youcode\Documents\GitHub\client-Ado\projet\obj\Debug\projet.csproj.GenerateResource.cache
+C:\Users\Youcode\Documents\GitHub\client-Ado\projet\obj\Debug\projet.csproj.CoreCompileInputs.cache
+C:\Users\Youcode\Documents\GitHub\client-Ado\projet\obj\Debug\projet.exe
+C:\Users\Youcode\Documents\GitHub\client-Ado\projet\obj\Debug\projet.pdb
+C:\Users\Youcode\Documents\GitHub\client-Ado\projet\obj\Debug\GeneratedInternalTypeHelper.g.cs
