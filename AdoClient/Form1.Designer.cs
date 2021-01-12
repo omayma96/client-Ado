@@ -31,9 +31,6 @@ namespace AdoClient
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.pclientDataSet1 = new AdoClient.pclientDataSet1();
-            this.clientTableAdapter1 = new AdoClient.pclientDataSet1TableAdapters.clientTableAdapter();
             this.Nom = new System.Windows.Forms.Label();
             this.prenom = new System.Windows.Forms.Label();
             this.Adress = new System.Windows.Forms.Label();
@@ -45,76 +42,36 @@ namespace AdoClient
             this.btn_Ajouter = new System.Windows.Forms.Button();
             this.btn_supprimer = new System.Windows.Forms.Button();
             this.btn_update = new System.Windows.Forms.Button();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnSave = new System.Windows.Forms.Button();
             this.cbvilleFilter = new System.Windows.Forms.ComboBox();
-            this.pclientDataSet2 = new AdoClient.pclientDataSet2();
-            this.villesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.villesTableAdapter = new AdoClient.pclientDataSet2TableAdapters.villesTableAdapter();
-            this.villesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.pclientDataSet2BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.villesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.clientBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pclientDataSet4 = new AdoClient.pclientDataSet4();
+            this.villeTBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pclientDataSet3 = new AdoClient.pclientDataSet3();
             this.villesBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.villesBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.villesBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
-            this.pclientDataSet3 = new AdoClient.pclientDataSet3();
-            this.villeTBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.villeTTableAdapter = new AdoClient.pclientDataSet3TableAdapters.villeTTableAdapter();
-            this.pclientDataSet4 = new AdoClient.pclientDataSet4();
-            this.clientBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.clientTableAdapter = new AdoClient.pclientDataSet4TableAdapters.clientTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pclientDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pclientDataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.villesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.villesBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pclientDataSet2BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.villesBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pclientDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.villeTBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pclientDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.villesBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.villesBindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.villesBindingSource5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pclientDataSet3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.villeTBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pclientDataSet4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView2
             // 
-            this.dataGridView2.AutoGenerateColumns = false;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5});
-            this.dataGridView2.DataSource = this.bindingSource1;
             this.dataGridView2.Location = new System.Drawing.Point(122, 24);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 45;
             this.dataGridView2.Size = new System.Drawing.Size(689, 142);
             this.dataGridView2.TabIndex = 0;
             this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
-            // 
-            // bindingSource1
-            // 
-            this.bindingSource1.DataMember = "client";
-            this.bindingSource1.DataSource = this.pclientDataSet1;
-            // 
-            // pclientDataSet1
-            // 
-            this.pclientDataSet1.DataSetName = "pclientDataSet1";
-            this.pclientDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // clientTableAdapter1
-            // 
-            this.clientTableAdapter1.ClearBeforeFill = true;
             // 
             // Nom
             // 
@@ -213,48 +170,6 @@ namespace AdoClient
             this.btn_update.UseVisualStyleBackColor = false;
             this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "id";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Visible = false;
-            this.dataGridViewTextBoxColumn1.Width = 110;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "nom";
-            this.dataGridViewTextBoxColumn2.HeaderText = "nom";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "prenom";
-            this.dataGridViewTextBoxColumn3.HeaderText = "prenom";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "adress";
-            this.dataGridViewTextBoxColumn4.HeaderText = "adress";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 220;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "ville";
-            this.dataGridViewTextBoxColumn5.HeaderText = "ville";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 120;
-            // 
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.Aqua;
@@ -279,73 +194,29 @@ namespace AdoClient
             this.cbvilleFilter.ValueMember = "nameV";
             this.cbvilleFilter.SelectedIndexChanged += new System.EventHandler(this.cbvilleFilter_SelectedIndexChanged);
             // 
-            // pclientDataSet2
+            // clientBindingSource
             // 
-            this.pclientDataSet2.DataSetName = "pclientDataSet2";
-            this.pclientDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // villesBindingSource
-            // 
-            this.villesBindingSource.DataMember = "villes";
-            this.villesBindingSource.DataSource = this.pclientDataSet2;
-            // 
-            // villesTableAdapter
-            // 
-            this.villesTableAdapter.ClearBeforeFill = true;
-            // 
-            // villesBindingSource1
-            // 
-            this.villesBindingSource1.DataMember = "villes";
-            this.villesBindingSource1.DataSource = this.pclientDataSet2;
-            // 
-            // pclientDataSet2BindingSource
-            // 
-            this.pclientDataSet2BindingSource.DataSource = this.pclientDataSet2;
-            this.pclientDataSet2BindingSource.Position = 0;
-            // 
-            // villesBindingSource2
-            // 
-            this.villesBindingSource2.DataMember = "villes";
-            this.villesBindingSource2.DataSource = this.pclientDataSet2BindingSource;
-            // 
-            // villesBindingSource3
-            // 
-            this.villesBindingSource3.DataMember = "villes";
-            this.villesBindingSource3.DataSource = this.pclientDataSet2BindingSource;
-            // 
-            // villesBindingSource4
-            // 
-            this.villesBindingSource4.DataMember = "villes";
-            this.villesBindingSource4.DataSource = this.pclientDataSet2BindingSource;
-            // 
-            // villesBindingSource5
-            // 
-            this.villesBindingSource5.DataMember = "villes";
-            this.villesBindingSource5.DataSource = this.pclientDataSet2;
-            // 
-            // pclientDataSet3
-            // 
-            this.pclientDataSet3.DataSetName = "pclientDataSet3";
-            this.pclientDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // villeTBindingSource
-            // 
-            this.villeTBindingSource.DataMember = "villeT";
-            this.villeTBindingSource.DataSource = this.pclientDataSet3;
-            // 
-            // villeTTableAdapter
-            // 
-            this.villeTTableAdapter.ClearBeforeFill = true;
+            this.clientBindingSource.DataMember = "client";
+            this.clientBindingSource.DataSource = this.pclientDataSet4;
             // 
             // pclientDataSet4
             // 
             this.pclientDataSet4.DataSetName = "pclientDataSet4";
             this.pclientDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // clientBindingSource
+            // villeTBindingSource
             // 
-            this.clientBindingSource.DataMember = "client";
-            this.clientBindingSource.DataSource = this.pclientDataSet4;
+            this.villeTBindingSource.DataMember = "villeT";
+            this.villeTBindingSource.DataSource = this.pclientDataSet3;
+            // 
+            // pclientDataSet3
+            // 
+            this.pclientDataSet3.DataSetName = "pclientDataSet3";
+            this.pclientDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // villeTTableAdapter
+            // 
+            this.villeTTableAdapter.ClearBeforeFill = true;
             // 
             // clientTableAdapter
             // 
@@ -371,20 +242,13 @@ namespace AdoClient
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pclientDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pclientDataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.villesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.villesBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pclientDataSet2BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.villesBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pclientDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.villeTBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pclientDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.villesBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.villesBindingSource4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.villesBindingSource5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pclientDataSet3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.villeTBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pclientDataSet4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -395,9 +259,6 @@ namespace AdoClient
 
     
         private System.Windows.Forms.DataGridView dataGridView2;
-        private pclientDataSet1 pclientDataSet1;
-        private System.Windows.Forms.BindingSource bindingSource1;
-        private pclientDataSet1TableAdapters.clientTableAdapter clientTableAdapter1;
         private System.Windows.Forms.Label Nom;
         private System.Windows.Forms.Label prenom;
         private System.Windows.Forms.Label Adress;
@@ -409,19 +270,8 @@ namespace AdoClient
         private System.Windows.Forms.Button btn_Ajouter;
         private System.Windows.Forms.Button btn_supprimer;
         private System.Windows.Forms.Button btn_update;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.ComboBox cbvilleFilter;
-        private pclientDataSet2 pclientDataSet2;
-        private System.Windows.Forms.BindingSource villesBindingSource;
-        private pclientDataSet2TableAdapters.villesTableAdapter villesTableAdapter;
-        private System.Windows.Forms.BindingSource villesBindingSource2;
-        private System.Windows.Forms.BindingSource pclientDataSet2BindingSource;
-        private System.Windows.Forms.BindingSource villesBindingSource1;
         private System.Windows.Forms.BindingSource villesBindingSource3;
         private System.Windows.Forms.BindingSource villesBindingSource4;
         private System.Windows.Forms.BindingSource villesBindingSource5;
