@@ -133,5 +133,22 @@ namespace AdoClient
             dataGridView2.DataSource = vill.ToTable();
             vill.RowFilter = String.Empty;
         }
+
+        private void btnFilter_Click(object sender, EventArgs e)
+        {
+            btnFilter.Hide();
+            btn_noFilter.Show();
+
+        }
+
+        private void btn_noFilter_Click(object sender, EventArgs e)
+        {
+            btnFilter.Show();
+            btn_noFilter.Hide();
+            dataGridView2.DataSource = dv;
+
+       
+
+        }
     }
 }

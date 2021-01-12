@@ -53,6 +53,8 @@ namespace AdoClient
             this.villesBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
             this.villeTTableAdapter = new AdoClient.pclientDataSet3TableAdapters.villeTTableAdapter();
             this.clientTableAdapter = new AdoClient.pclientDataSet4TableAdapters.clientTableAdapter();
+            this.btnFilter = new System.Windows.Forms.Button();
+            this.btn_noFilter = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pclientDataSet4)).BeginInit();
@@ -66,10 +68,10 @@ namespace AdoClient
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(122, 24);
+            this.dataGridView2.Location = new System.Drawing.Point(77, 24);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 45;
-            this.dataGridView2.Size = new System.Drawing.Size(689, 142);
+            this.dataGridView2.Size = new System.Drawing.Size(658, 142);
             this.dataGridView2.TabIndex = 0;
             this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             // 
@@ -187,9 +189,9 @@ namespace AdoClient
             this.cbvilleFilter.DataSource = this.villeTBindingSource;
             this.cbvilleFilter.DisplayMember = "nameV";
             this.cbvilleFilter.FormattingEnabled = true;
-            this.cbvilleFilter.Location = new System.Drawing.Point(818, 27);
+            this.cbvilleFilter.Location = new System.Drawing.Point(775, 86);
             this.cbvilleFilter.Name = "cbvilleFilter";
-            this.cbvilleFilter.Size = new System.Drawing.Size(79, 21);
+            this.cbvilleFilter.Size = new System.Drawing.Size(111, 21);
             this.cbvilleFilter.TabIndex = 13;
             this.cbvilleFilter.ValueMember = "nameV";
             this.cbvilleFilter.SelectedIndexChanged += new System.EventHandler(this.cbvilleFilter_SelectedIndexChanged);
@@ -222,9 +224,34 @@ namespace AdoClient
             // 
             this.clientTableAdapter.ClearBeforeFill = true;
             // 
+            // btnFilter
+            // 
+            this.btnFilter.BackColor = System.Drawing.Color.MediumPurple;
+            this.btnFilter.Location = new System.Drawing.Point(775, 24);
+            this.btnFilter.Name = "btnFilter";
+            this.btnFilter.Size = new System.Drawing.Size(111, 55);
+            this.btnFilter.TabIndex = 14;
+            this.btnFilter.Text = "filtrer";
+            this.btnFilter.UseVisualStyleBackColor = false;
+            this.btnFilter.Click += new System.EventHandler(this.btnFilter_Click);
+            // 
+            // btn_noFilter
+            // 
+            this.btn_noFilter.BackColor = System.Drawing.Color.Magenta;
+            this.btn_noFilter.Location = new System.Drawing.Point(775, 116);
+            this.btn_noFilter.Name = "btn_noFilter";
+            this.btn_noFilter.Size = new System.Drawing.Size(110, 50);
+            this.btn_noFilter.TabIndex = 15;
+            this.btn_noFilter.Text = "No filtre";
+            this.btn_noFilter.UseVisualStyleBackColor = false;
+            this.btn_noFilter.Visible = false;
+            this.btn_noFilter.Click += new System.EventHandler(this.btn_noFilter_Click);
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(910, 359);
+            this.Controls.Add(this.btn_noFilter);
+            this.Controls.Add(this.btnFilter);
             this.Controls.Add(this.cbvilleFilter);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btn_update);
@@ -281,6 +308,8 @@ namespace AdoClient
         private pclientDataSet4 pclientDataSet4;
         private System.Windows.Forms.BindingSource clientBindingSource;
         private pclientDataSet4TableAdapters.clientTableAdapter clientTableAdapter;
+        private System.Windows.Forms.Button btnFilter;
+        private System.Windows.Forms.Button btn_noFilter;
     }
 }
 
