@@ -157,6 +157,7 @@ namespace AdoClient
             box_Prenom.Text = " ";
             box_Adress.Text = " ";
             box_Ville.Text = " ";
+            box_Nom.Focus();
         }
     }
 }
