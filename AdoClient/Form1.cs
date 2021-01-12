@@ -138,7 +138,7 @@ namespace AdoClient
         {
             btnFilter.Hide();
             btn_noFilter.Show();
-
+            cbvilleFilter.Visible = true;
         }
 
         private void btn_noFilter_Click(object sender, EventArgs e)
@@ -146,8 +146,8 @@ namespace AdoClient
             btnFilter.Show();
             btn_noFilter.Hide();
             dataGridView2.DataSource = dv;
+            cbvilleFilter.Visible = false;
 
-       
 
         }
     }

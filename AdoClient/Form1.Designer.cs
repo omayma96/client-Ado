@@ -194,6 +194,7 @@ namespace AdoClient
             this.cbvilleFilter.Size = new System.Drawing.Size(111, 21);
             this.cbvilleFilter.TabIndex = 13;
             this.cbvilleFilter.ValueMember = "nameV";
+            this.cbvilleFilter.Visible = false;
             this.cbvilleFilter.SelectedIndexChanged += new System.EventHandler(this.cbvilleFilter_SelectedIndexChanged);
             // 
             // clientBindingSource
