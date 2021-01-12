@@ -150,5 +150,13 @@ namespace AdoClient
 
 
         }
+
+        private void btn_new_Click(object sender, EventArgs e)
+        {
+            box_Nom.Text = " ";
+            box_Prenom.Text = " ";
+            box_Adress.Text = " ";
+            box_Ville.Text = " ";
+        }
     }
 }

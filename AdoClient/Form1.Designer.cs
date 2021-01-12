@@ -55,6 +55,7 @@ namespace AdoClient
             this.clientTableAdapter = new AdoClient.pclientDataSet4TableAdapters.clientTableAdapter();
             this.btnFilter = new System.Windows.Forms.Button();
             this.btn_noFilter = new System.Windows.Forms.Button();
+            this.btn_new = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pclientDataSet4)).BeginInit();
@@ -248,9 +249,22 @@ namespace AdoClient
             this.btn_noFilter.Visible = false;
             this.btn_noFilter.Click += new System.EventHandler(this.btn_noFilter_Click);
             // 
+            // btn_new
+            // 
+            this.btn_new.BackColor = System.Drawing.Color.DarkOrange;
+            this.btn_new.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_new.Location = new System.Drawing.Point(77, 192);
+            this.btn_new.Name = "btn_new";
+            this.btn_new.Size = new System.Drawing.Size(106, 119);
+            this.btn_new.TabIndex = 16;
+            this.btn_new.Text = "Créer nouveau";
+            this.btn_new.UseVisualStyleBackColor = false;
+            this.btn_new.Click += new System.EventHandler(this.btn_new_Click);
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(910, 359);
+            this.Controls.Add(this.btn_new);
             this.Controls.Add(this.btn_noFilter);
             this.Controls.Add(this.btnFilter);
             this.Controls.Add(this.cbvilleFilter);
@@ -311,6 +325,7 @@ namespace AdoClient
         private pclientDataSet4TableAdapters.clientTableAdapter clientTableAdapter;
         private System.Windows.Forms.Button btnFilter;
         private System.Windows.Forms.Button btn_noFilter;
+        private System.Windows.Forms.Button btn_new;
     }
 }
 
