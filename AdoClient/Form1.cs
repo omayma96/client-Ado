@@ -123,7 +123,15 @@ namespace AdoClient
         private void cbvilleFilter_SelectedIndexChanged(object sender, EventArgs e)
         {
            
-            
+            DataTable vf;
+            vf = ds.Tables["Client"];
+
+          
+
+            DataView vill = vf.DefaultView;
+            vill.RowFilter = $"ville='{cbvilleFilter.Text}'";
+            dataGridView2.DataSource = vill.ToTable();
+            vill.RowFilter = String.Empty;
         }
     }
 }
