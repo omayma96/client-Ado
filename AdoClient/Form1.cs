@@ -123,15 +123,7 @@ namespace AdoClient
         private void cbvilleFilter_SelectedIndexChanged(object sender, EventArgs e)
         {
            
-            try
-            {
-                dv.RowFilter = "ville";
-                dataGridView2.DataSource = dv;
-            }
-          catch(Exception)
-            {
-                
-            }
+            
         }
     }
 }
