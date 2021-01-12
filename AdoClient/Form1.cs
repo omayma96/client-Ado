@@ -40,7 +40,6 @@ namespace AdoClient
 
             adville = new SqlDataAdapter("Select * From VilleT", cn);
             adville.Fill(ds, "villeT");
-           
             cbvilleFilter.DataSource = ds.Tables["villeT"];
            
 
