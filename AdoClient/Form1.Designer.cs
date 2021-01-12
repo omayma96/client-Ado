@@ -58,6 +58,15 @@ namespace AdoClient
             this.villesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.pclientDataSet2BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.villesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.villesBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.villesBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.villesBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
+            this.pclientDataSet3 = new AdoClient.pclientDataSet3();
+            this.villeTBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.villeTTableAdapter = new AdoClient.pclientDataSet3TableAdapters.villeTTableAdapter();
+            this.pclientDataSet4 = new AdoClient.pclientDataSet4();
+            this.clientBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.clientTableAdapter = new AdoClient.pclientDataSet4TableAdapters.clientTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pclientDataSet1)).BeginInit();
@@ -66,6 +75,13 @@ namespace AdoClient
             ((System.ComponentModel.ISupportInitialize)(this.villesBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pclientDataSet2BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.villesBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.villesBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.villesBindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.villesBindingSource5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pclientDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.villeTBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pclientDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView2
@@ -252,14 +268,15 @@ namespace AdoClient
             // 
             // cbvilleFilter
             // 
-            this.cbvilleFilter.DataSource = this.villesBindingSource2;
-            this.cbvilleFilter.DisplayMember = "ville";
+            this.cbvilleFilter.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.clientBindingSource, "ville", true));
+            this.cbvilleFilter.DataSource = this.villeTBindingSource;
+            this.cbvilleFilter.DisplayMember = "nameV";
             this.cbvilleFilter.FormattingEnabled = true;
             this.cbvilleFilter.Location = new System.Drawing.Point(818, 27);
             this.cbvilleFilter.Name = "cbvilleFilter";
             this.cbvilleFilter.Size = new System.Drawing.Size(79, 21);
             this.cbvilleFilter.TabIndex = 13;
-            this.cbvilleFilter.ValueMember = "ville";
+            this.cbvilleFilter.ValueMember = "nameV";
             this.cbvilleFilter.SelectedIndexChanged += new System.EventHandler(this.cbvilleFilter_SelectedIndexChanged);
             // 
             // pclientDataSet2
@@ -291,6 +308,49 @@ namespace AdoClient
             this.villesBindingSource2.DataMember = "villes";
             this.villesBindingSource2.DataSource = this.pclientDataSet2BindingSource;
             // 
+            // villesBindingSource3
+            // 
+            this.villesBindingSource3.DataMember = "villes";
+            this.villesBindingSource3.DataSource = this.pclientDataSet2BindingSource;
+            // 
+            // villesBindingSource4
+            // 
+            this.villesBindingSource4.DataMember = "villes";
+            this.villesBindingSource4.DataSource = this.pclientDataSet2BindingSource;
+            // 
+            // villesBindingSource5
+            // 
+            this.villesBindingSource5.DataMember = "villes";
+            this.villesBindingSource5.DataSource = this.pclientDataSet2;
+            // 
+            // pclientDataSet3
+            // 
+            this.pclientDataSet3.DataSetName = "pclientDataSet3";
+            this.pclientDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // villeTBindingSource
+            // 
+            this.villeTBindingSource.DataMember = "villeT";
+            this.villeTBindingSource.DataSource = this.pclientDataSet3;
+            // 
+            // villeTTableAdapter
+            // 
+            this.villeTTableAdapter.ClearBeforeFill = true;
+            // 
+            // pclientDataSet4
+            // 
+            this.pclientDataSet4.DataSetName = "pclientDataSet4";
+            this.pclientDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // clientBindingSource
+            // 
+            this.clientBindingSource.DataMember = "client";
+            this.clientBindingSource.DataSource = this.pclientDataSet4;
+            // 
+            // clientTableAdapter
+            // 
+            this.clientTableAdapter.ClearBeforeFill = true;
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(910, 359);
@@ -318,6 +378,13 @@ namespace AdoClient
             ((System.ComponentModel.ISupportInitialize)(this.villesBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pclientDataSet2BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.villesBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.villesBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.villesBindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.villesBindingSource5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pclientDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.villeTBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pclientDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -355,6 +422,15 @@ namespace AdoClient
         private System.Windows.Forms.BindingSource villesBindingSource2;
         private System.Windows.Forms.BindingSource pclientDataSet2BindingSource;
         private System.Windows.Forms.BindingSource villesBindingSource1;
+        private System.Windows.Forms.BindingSource villesBindingSource3;
+        private System.Windows.Forms.BindingSource villesBindingSource4;
+        private System.Windows.Forms.BindingSource villesBindingSource5;
+        private pclientDataSet3 pclientDataSet3;
+        private System.Windows.Forms.BindingSource villeTBindingSource;
+        private pclientDataSet3TableAdapters.villeTTableAdapter villeTTableAdapter;
+        private pclientDataSet4 pclientDataSet4;
+        private System.Windows.Forms.BindingSource clientBindingSource;
+        private pclientDataSet4TableAdapters.clientTableAdapter clientTableAdapter;
     }
 }
 

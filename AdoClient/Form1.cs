@@ -25,20 +25,23 @@ namespace AdoClient
         SqlDataAdapter ad = new SqlDataAdapter();
         SqlDataAdapter adville;
         DataTable dtClient;
+
+       
         DataView dv;
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: cette ligne de code charge les données dans la table 'pclientDataSet2.villes'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.villesTableAdapter.Fill(this.pclientDataSet2.villes);
+         
+
 
             ad = new SqlDataAdapter("Select * From Client", cn);
             ad.Fill(ds, "Client");
             dtClient = ds.Tables["client"];
             dataGridView2.DataSource = dtClient;
 
-            adville = new SqlDataAdapter("Select * From Villes", cn);
-            adville.Fill(ds, "villes");
-            cbvilleFilter.DataSource = ds.Tables["villes"];
+            adville = new SqlDataAdapter("Select * From VilleT", cn);
+            adville.Fill(ds, "villeT");
+           
+            cbvilleFilter.DataSource = ds.Tables["villeT"];
            
 
             dv = new DataView(dtClient);
@@ -116,12 +119,19 @@ namespace AdoClient
             SqlCommandBuilder scb = new SqlCommandBuilder(ad);
             ad.Update(ds, "Client");
         }
-
+      
         private void cbvilleFilter_SelectedIndexChanged(object sender, EventArgs e)
         {
            
-
-    }
-
+            try
+            {
+                dv.RowFilter = "ville";
+                dataGridView2.DataSource = dv;
+            }
+          catch(Exception)
+            {
+                
+            }
+        }
     }
 }

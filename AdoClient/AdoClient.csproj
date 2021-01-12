@@ -67,6 +67,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>pclientDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="pclientDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pclientDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pclientDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pclientDataSet4.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -113,6 +123,28 @@
     </None>
     <None Include="pclientDataSet2.xss">
       <DependentUpon>pclientDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="pclientDataSet3.xsc">
+      <DependentUpon>pclientDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="pclientDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pclientDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pclientDataSet3.xss">
+      <DependentUpon>pclientDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="pclientDataSet4.xsc">
+      <DependentUpon>pclientDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="pclientDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pclientDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pclientDataSet4.xss">
+      <DependentUpon>pclientDataSet4.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
