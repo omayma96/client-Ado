@@ -146,7 +146,7 @@ namespace AdoClient
             this.btn_Ajouter.Name = "btn_Ajouter";
             this.btn_Ajouter.Size = new System.Drawing.Size(127, 42);
             this.btn_Ajouter.TabIndex = 9;
-            this.btn_Ajouter.Text = "Ajouter";
+            this.btn_Ajouter.Text = "Enregistrer";
             this.btn_Ajouter.UseVisualStyleBackColor = false;
             this.btn_Ajouter.Click += new System.EventHandler(this.btn_Ajouter_Click);
             // 
@@ -168,14 +168,14 @@ namespace AdoClient
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(123, 43);
             this.btn_update.TabIndex = 11;
-            this.btn_update.Text = "modifier";
+            this.btn_update.Text = "Mettre à jour";
             this.btn_update.UseVisualStyleBackColor = false;
             this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.Aqua;
-            this.btnSave.Location = new System.Drawing.Point(348, 313);
+            this.btnSave.Location = new System.Drawing.Point(313, 313);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(218, 34);
             this.btnSave.TabIndex = 12;
